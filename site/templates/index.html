@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <header>
+        <h1>AI Detection nahi h ye Platform</h1>
+        <p>Check if your text or code is AI-generated or human-written!</p>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Text Analysis</h2>
+            <textarea id="text-input" placeholder="Enter your text here..."></textarea>
+            <div class="button-group">
+                <button id="check-text-model-btn">Analyze Text (Model)</button>
+                <button id="check-text-api-btn">Analyze Text (API)</button>
+            </div>
+            <div id="text-result" class="result-box"></div>
+        </section>
+        <section class="form-section">
+            <h2>Code Analysis</h2>
+            <textarea id="code-input" placeholder="Enter your code here..."></textarea>
+            <div class="button-group">
+                <button id="check-code-model-btn">Analyze Code (Model)</button>
+                <button id="check-code-api-btn">Analyze Code (API)</button>
+            </div>
+            <div id="code-result" class="result-box"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Powered by AI Models & Gemini API</p>
+    </footer>
+    <script>
+        // Text Analysis - Model Check
+        document.getElementById('check-text-model-btn').addEventListener('click', async () => {
+            const text = document.getElementById('text-input').value;
+            const response = await fetch('/check_text', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text })
+            });
+            const data = await response.json();
+            document.getElementById('text-result').innerText = `Model Result: ${data.normal_result}\nConfidence: ${data.confidence}`;
+        });
+
+        // Text Analysis - API Check
+        document.getElementById('check-text-api-btn').addEventListener('click', async () => {
+            const text = document.getElementById('text-input').value;
+            const response = await fetch('/check_text', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text })
+            });
+            const data = await response.json();
+            document.getElementById('text-result').innerText = `API Result: ${data.gemini_result}`;
+        });
+
+        // Code Analysis - Model Check
+        document.getElementById('check-code-model-btn').addEventListener('click', async () => {
+            const code = document.getElementById('code-input').value;
+            const response = await fetch('/check_code', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ code })
+            });
+            const data = await response.json();
+            document.getElementById('code-result').innerText = `Model Result: ${data.normal_result}\nMetrics: ${JSON.stringify(data.metrics, null, 2)}`;
+        });
+
+        // Code Analysis - API Check
+        document.getElementById('check-code-api-btn').addEventListener('click', async () => {
+            const code = document.getElementById('code-input').value;
+            const response = await fetch('/check_code', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ code })
+            });
+            const data = await response.json();
+            document.getElementById('code-result').innerText = `API Result: ${data.gemini_result}`;
+        });
+    </script>
+</body>
+</html>

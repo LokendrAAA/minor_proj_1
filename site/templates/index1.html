@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Detection Platform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .banner {
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+            padding: 50px;
+            margin-bottom: 20px;
+        }
+
+        .banner h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .banner p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .button-group a {
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        .button-group a:hover {
+            background-color: #0056b3;
+        }
+
+        .form-section {
+            margin-top: 50px;
+            padding: 20px;
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .result-box {
+            margin-top: 20px;
+            padding: 10px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner Section -->
+    <div class="banner">
+        <h1>AI Detection Platform</h1>
+        <p>Quickly analyze text or code to determine if it's AI-generated or human-written!</p>
+        <div class="button-group">
+            <a href="#text-analysis">Go to Text Analysis</a>
+            <a href="#code-analysis">Go to Code Analysis</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Text Analysis Section -->
+        <section id="text-analysis" class="form-section">
+            <h2>Text Analysis</h2>
+            <textarea id="text-input" placeholder="Enter your text here..."></textarea>
+            <div class="button-group">
+                <button id="check-text-model-btn">Analyze Text (Model)</button>
+                <button id="check-text-api-btn">Analyze Text (API)</button>
+            </div>
+            <div id="text-result" class="result-box"></div>
+        </section>
+
+        <!-- Code Analysis Section -->
+        <section id="code-analysis" class="form-section">
+            <h2>Code Analysis</h2>
+            <textarea id="code-input" placeholder="Enter your code here..."></textarea>
+            <div class="button-group">
+                <button id="check-code-model-btn">Analyze Code (Model)</button>
+                <button id="check-code-api-btn">Analyze Code (API)</button>
+            </div>
+            <div id="code-result" class="result-box"></div>
+        </section>
+    </main>
+
+    <script>
+        // Smooth scrolling to sections
+        document.querySelectorAll('.button-group a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+                targetSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Text Analysis - Model Check
+        document.getElementById('check-text-model-btn').addEventListener('click', async () => {
+            const text = document.getElementById('text-input').value;
+
+            const response = await fetch('/check_text_model', { 
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text })
+            });
+            const data = await response.json();
+
+            const resultBox = document.getElementById('text-result');
+            resultBox.innerHTML = ''; // Clear previous results
+
+            let totalConfidence = 0;
+
+            // Display colored lines only
+            data.line_results.forEach((lineResult, index) => {
+                const lineDiv = document.createElement('div');
+                lineDiv.textContent = text.split(' ').slice(index * 10, (index + 1) * 10).join(' ');
+                lineDiv.style.padding = '5px';
+                lineDiv.style.marginBottom = '5px';
+
+                if (lineResult.result === "AI-generated") {
+                    lineDiv.style.backgroundColor = 'red';
+                    lineDiv.style.color = 'white';
+                } else {
+                    lineDiv.style.backgroundColor = 'blue';
+                    lineDiv.style.color = 'white';
+                }
+
+                totalConfidence += lineResult.confidence;
+                resultBox.appendChild(lineDiv);
+            });
+
+            // Calculate average confidence
+            const averageConfidence = (totalConfidence / data.line_results.length) * 100;
+
+            // Display overall result
+            const overallDiv = document.createElement('div');
+            overallDiv.textContent = `Overall Result: ${data.overall_result}`;
+            overallDiv.style.fontWeight = 'bold';
+            overallDiv.style.marginTop = '10px';
+
+            // Display overall confidence
+            const confidenceDiv = document.createElement('div');
+            confidenceDiv.textContent = `Average Confidence: ${averageConfidence.toFixed(2)}%`;
+            confidenceDiv.style.fontWeight = 'bold';
+            confidenceDiv.style.marginTop = '5px';
+
+            resultBox.appendChild(overallDiv);
+            resultBox.appendChild(confidenceDiv);
+        });
+
+        // Text Analysis - API Check
+        document.getElementById('check-text-api-btn').addEventListener('click', async () => {
+            const text = document.getElementById('text-input').value;
+            const response = await fetch('/check_text_api', { 
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text })
+            });
+            const data = await response.json();
+
+            const resultBox = document.getElementById('text-result');
+            resultBox.innerHTML = '';  // Clear previous results
+
+            // Display the API result
+            const apiResultDiv = document.createElement('div');
+            apiResultDiv.textContent = `API Result: ${data.gemini_result}`;
+            apiResultDiv.style.marginBottom = '10px';
+            apiResultDiv.style.fontWeight = 'bold';
+            resultBox.appendChild(apiResultDiv);
+        });
+
+        // Code Analysis - Model Check
+        document.getElementById('check-code-model-btn').addEventListener('click', async () => {
+            const code = document.getElementById('code-input').value;
+            const response = await fetch('/check_code_model', { 
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ code })
+            });
+            const data = await response.json();
+
+            const resultBox = document.getElementById('code-result');
+            resultBox.innerHTML = ''; // Clear previous results
+
+            // Add Model Result
+            const modelResultDiv = document.createElement('div');
+            modelResultDiv.textContent = `Model Result: ${data.normal_result}`;
+            resultBox.appendChild(modelResultDiv);
+
+            // Create and populate metrics table
+            const metricsTable = document.createElement('table');
+            metricsTable.style.borderCollapse = 'collapse';
+            metricsTable.style.width = '100%';
+            metricsTable.style.marginTop = '10px';
+
+            const tableHeader = `
+                <thead>
+                    <tr>
+                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Metric</th>
+                        <th style="border: 1px solid #ddd; padding: 8px; text-align: left;">Value</th>
+                    </tr>
+                </thead>
+            `;
+            metricsTable.innerHTML = tableHeader;
+
+            const tableBody = document.createElement('tbody');
+            for (const [key, value] of Object.entries(data.metrics)) {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td style="border: 1px solid #ddd; padding: 8px;">${key}</td>
+                    <td style="border: 1px solid #ddd; padding: 8px;">${value}</td>
+                `;
+                tableBody.appendChild(row);
+            }
+            metricsTable.appendChild(tableBody);
+            resultBox.appendChild(metricsTable);
+        });
+
+        // Code Analysis - API Check
+        document.getElementById('check-code-api-btn').addEventListener('click', async () => {
+            const code = document.getElementById('code-input').value;
+            const response = await fetch('/check_code_api', { 
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ code })
+            });
+            const data = await response.json();
+
+            const resultBox = document.getElementById('code-result');
+            resultBox.innerHTML = ''; // Clear previous results
+
+            const apiResultDiv = document.createElement('div');
+            apiResultDiv.textContent = `API Result: ${data.gemini_result}`;
+            resultBox.appendChild(apiResultDiv);
+        });
+    </script>
+</body>
+</html>
