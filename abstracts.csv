@@ -1,0 +1,335 @@
+url,abstract
+https://pubmed.ncbi.nlm.nih.gov/35951699/,"Seismic waves from earthquakes and other sources are used to infer the structure and properties of Earth's interior. The availability of large-scale seismic datasets and the suitability of deep-learning techniques for seismic data processing have pushed deep learning to the forefront of fundamental, long-standing research investigations in seismology. However, some aspects of applying deep learning to seismology are likely to prove instructive for the geosciences, and perhaps other research areas more broadly. Deep learning is a powerful approach, but there are subtleties and nuances in its application. We present a systematic overview of trends, challenges, and opportunities in applications of deep-learning methods in seismology."
+https://pubmed.ncbi.nlm.nih.gov/35576821/,"With an increase in deep learning-based methods, the call for explainability of such methods grows, especially in high-stakes decision making areas such as medical image analysis. This survey presents an overview of explainable artificial intelligence (XAI) used in deep learning-based medical image analysis. A framework of XAI criteria is introduced to classify deep learning-based medical image analysis methods. Papers on XAI techniques in medical image analysis are then surveyed and categorized according to the framework and according to anatomical location. The paper concludes with an outlook of future opportunities for XAI in medical image analysis."
+https://pubmed.ncbi.nlm.nih.gov/32277744/,"The development of digital pathology and progression of state-of-the-art algorithms for computer vision have led to increasing interest in the use of artificial intelligence (AI), especially deep learning (DL)-based AI, in tumor pathology. The DL-based algorithms have been developed to conduct all kinds of work involved in tumor pathology, including tumor diagnosis, subtyping, grading, staging, and prognostic prediction, as well as the identification of pathological features, biomarkers and genetic changes. The applications of AI in pathology not only contribute to improve diagnostic accuracy and objectivity but also reduce the workload of pathologists and subsequently enable them to spend additional time on high-level decision-making tasks. In addition, AI is useful for pathologists to meet the requirements of precision oncology. However, there are still some challenges relating to the implementation of AI, including the issues of algorithm validation and interpretability, computing systems, the unbelieving attitude of pathologists, clinicians and patients, as well as regulators and reimbursements. Herein, we present an overview on how AI-based approaches could be integrated into the workflow of pathologists and discuss the challenges and perspectives of the implementation of AI in tumor pathology."
+https://pubmed.ncbi.nlm.nih.gov/30808014/,"Objective:
+        
+      
+      Electroencephalography (EEG) analysis has been an important tool in neuroscience with applications in neuroscience, neural engineering (e.g. Brain-computer interfaces, BCI's), and even commercial applications. Many of the analytical tools used in EEG studies have used machine learning to uncover relevant information for neural classification and neuroimaging. Recently, the availability of large EEG data sets and advances in machine learning have both led to the deployment of deep learning architectures, especially in the analysis of EEG signals and in understanding the information it may contain for brain functionality. The robust automatic classification of these signals is an important step towards making the use of EEG more practical in many applications and less reliant on trained professionals. Towards this goal, a systematic review of the literature on deep learning applications to EEG classification was performed to address the following critical questions: (1) Which EEG classification tasks have been explored with deep learning? (2) What input formulations have been used for training the deep networks? (3) Are there specific deep learning network structures suitable for specific types of tasks?
+    
+
+
+          Approach:
+        
+      
+      A systematic literature review of EEG classification using deep learning was performed on Web of Science and PubMed databases, resulting in 90 identified studies. Those studies were analyzed based on type of task, EEG preprocessing methods, input type, and deep learning architecture.
+    
+
+
+          Main results:
+        
+      
+      For EEG classification tasks, convolutional neural networks, recurrent neural networks, deep belief networks outperform stacked auto-encoders and multi-layer perceptron neural networks in classification accuracy. The tasks that used deep learning fell into five general groups: emotion recognition, motor imagery, mental workload, seizure detection, event related potential detection, and sleep scoring. For each type of task, we describe the specific input formulation, major characteristics, and end classifier recommendations found through this review.
+    
+
+
+          Significance:
+        
+      
+      This review summarizes the current practices and performance outcomes in the use of deep learning for EEG classification. Practical suggestions on the selection of many hyperparameters are provided in the hope that they will promote or guide the deployment of deep learning to EEG datasets in future research."
+https://pubmed.ncbi.nlm.nih.gov/35089332/,"Biomedical data are becoming increasingly multimodal and thereby capture the underlying complex relationships among biological processes. Deep learning (DL)-based data fusion strategies are a popular approach for modeling these nonlinear relationships. Therefore, we review the current state-of-the-art of such methods and propose a detailed taxonomy that facilitates more informed choices of fusion strategies for biomedical applications, as well as research on novel methods. By doing so, we find that deep fusion strategies often outperform unimodal and shallow approaches. Additionally, the proposed subcategories of fusion strategies show different advantages and drawbacks. The review of current methods has shown that, especially for intermediate fusion strategies, joint representation learning is the preferred approach as it effectively models the complex interactions of different levels of biological organization. Finally, we note that gradual fusion, based on prior biological knowledge or on search strategies, is a promising future research path. Similarly, utilizing transfer learning might overcome sample size limitations of multimodal data sets. As these data sets become increasingly available, multimodal DL approaches present the opportunity to train holistic models that can learn the complex regulatory dynamics behind health and disease."
+https://pubmed.ncbi.nlm.nih.gov/34518686/,"The expanding scale and inherent complexity of biological data have encouraged a growing use of machine learning in biology to build informative and predictive models of the underlying biological processes. All machine learning techniques fit models to data; however, the specific methods are quite varied and can at first glance seem bewildering. In this Review, we aim to provide readers with a gentle introduction to a few key machine learning techniques, including the most recently developed and widely used techniques involving deep neural networks. We describe how different techniques may be suited to specific types of biological data, and also discuss some best practices and points to consider when one is embarking on experiments involving machine learning. Some emerging directions in machine learning methodology are also discussed."
+https://pubmed.ncbi.nlm.nih.gov/26572668/,"Spurred by advances in processing power, memory, storage, and an unprecedented wealth of data, computers are being asked to tackle increasingly complex learning tasks, often with astonishing success. Computers have now mastered a popular variant of poker, learned the laws of physics from experimental data, and become experts in video games - tasks that would have been deemed impossible not too long ago. In parallel, the number of companies centered on applying complex data analysis to varying industries has exploded, and it is thus unsurprising that some analytic companies are turning attention to problems in health care. The purpose of this review is to explore what problems in medicine might benefit from such learning approaches and use examples from the literature to introduce basic concepts in machine learning. It is important to note that seemingly large enough medical data sets and adequate learning algorithms have been available for many decades, and yet, although there are thousands of papers applying machine learning algorithms to medical data, very few have contributed meaningfully to clinical care. This lack of impact stands in stark contrast to the enormous relevance of machine learning to many other industries. Thus, part of my effort will be to identify what obstacles there may be to changing the practice of medicine through statistical learning approaches, and discuss how these might be overcome."
+https://pubmed.ncbi.nlm.nih.gov/32704420/,"Purpose:
+        
+      
+      To present an overview of current machine learning methods and their use in medical research, focusing on select machine learning techniques, best practices, and deep learning.
+    
+
+
+          Methods:
+        
+      
+      A systematic literature search in PubMed was performed for articles pertinent to the topic of artificial intelligence methods used in medicine with an emphasis on ophthalmology.
+    
+
+
+          Results:
+        
+      
+      A review of machine learning and deep learning methodology for the audience without an extensive technical computer programming background.
+    
+
+
+          Conclusions:
+        
+      
+      Artificial intelligence has a promising future in medicine; however, many challenges remain.
+    
+
+
+          Translational relevance:
+        
+      
+      The aim of this review article is to provide the nontechnical readers a layman's explanation of the machine learning methods being used in medicine today. The goal is to provide the reader a better understanding of the potential and challenges of artificial intelligence within the field of medicine."
+https://pubmed.ncbi.nlm.nih.gov/30102808/,"Machine learning (ML) is a burgeoning field of medicine with huge resources being applied to fuse computer science and statistics to medical problems. Proponents of ML extol its ability to deal with large, complex and disparate data, often found within medicine and feel that ML is the future for biomedical research, personalized medicine, computer-aided diagnosis to significantly advance global health care. However, the concepts of ML are unfamiliar to many medical professionals and there is untapped potential in the use of ML as a research tool. In this article, we provide an overview of the theory behind ML, explore the common ML algorithms used in medicine including their pitfalls and discuss the potential future of ML in medicine."
+https://pubmed.ncbi.nlm.nih.gov/32800297/,"Machine learning is increasingly used in mental health research and has the potential to advance our understanding of how to characterize, predict, and treat mental disorders and associated adverse health outcomes (e.g., suicidal behavior). Machine learning offers new tools to overcome challenges for which traditional statistical methods are not well-suited. This paper provides an overview of machine learning with a specific focus on supervised learning (i.e., methods that are designed to predict or classify an outcome of interest). Several common supervised learning methods are described, along with applied examples from the published literature. We also provide an overview of supervised learning model building, validation, and performance evaluation. Finally, challenges in creating robust and generalizable machine learning algorithms are discussed."
+https://pubmed.ncbi.nlm.nih.gov/36284350/,"Virtual reality (VR) and augmented reality (AR) are aspiring, new technologies with increasing use in critical care medicine. While VR fully immerses the user into a virtual three-dimensional space, AR adds overlaid virtual elements into a real-world environment. VR and AR offer great potential to improve critical care medicine for patients, relatives and health care providers. VR may help to ameliorate anxiety, stress, fear, and pain for the patient. It may assist patients in mobilisation and rehabilitation and can improve communication between all those involved in the patient's care. AR can be an effective tool to support continuous education of intensive care medicine providers, and may complement traditional learning methods to acquire key practical competences such as central venous line placement, cardiopulmonary resuscitation, extracorporeal membrane oxygenation device management or endotracheal intubation. Currently, technical, human, and ethical challenges remain. The adaptation and integration of VR/AR modalities into useful clinical applications that can be used routinely on the ICU is challenging. Users may experience unwanted side effects (so-called ""cybersickness"") during VR/AR sessions, which may limit its applicability. Furthermore, critically ill patients are one of the most vulnerable patient groups and warrant special ethical considerations if new technologies are to be introduced into their daily care. To date, most studies involving AR/VR in critical care medicine provide only a low level of evidence due to their research design. Here we summarise background information, current developments, and key considerations that should be taken into account for future scientific investigations in this field."
+https://pubmed.ncbi.nlm.nih.gov/36651587/,"Background:
+        
+      
+      Virtual and augmented reality (VAR) represents a combination of current state-of-the-art computer and imaging technologies and has the potential to be a revolutionary technology in many surgical fields. An increasing number of investigators have developed and applied VAR in hip-related surgery with the aim of using this technology to reduce hip surgery-related complications, improve surgical success rates, and reduce surgical risks. These technologies are beginning to be widely used in hip-related preoperative operation simulation and training, intraoperative navigation tools in the operating room, and postoperative rehabilitation.
+    
+
+
+          Objective:
+        
+      
+      With the aim of reviewing the current status of virtual reality (VR) and augmented reality (AR) in hip-related surgery and summarizing its benefits, we discussed and briefly described the applicability, advantages, limitations, and future perspectives of VR and AR techniques in hip-related surgery, such as preoperative operation simulation and training; explored the possible future applications of AR in the operating room; and discussed the bright prospects of VR and AR technologies in postoperative rehabilitation after hip surgery.
+    
+
+
+          Methods:
+        
+      
+      We searched the PubMed and Web of Science databases using the following key search terms: (""virtual reality"" OR ""augmented reality"") AND (""pelvis"" OR ""hip""). The literature on basic and clinical research related to the aforementioned key search terms, that is, studies evaluating the key factors, challenges, or problems of using of VAR technology in hip-related surgery, was collected.
+    
+
+
+          Results:
+        
+      
+      A total of 40 studies and reports were included and classified into the following categories: total hip arthroplasty, hip resurfacing, femoral neck fracture, pelvic fracture, acetabular fracture, tumor, arthroscopy, and postoperative rehabilitation. Quality assessment could be performed in 30 studies. Among the clinical studies, there were 16 case series with an average score of 89 out of 100 points (89%) and 1 case report that scored 81 (SD 10.11) out of 100 points (81%) according to the Joanna Briggs Institute Critical Appraisal Checklist. Two cadaveric studies scored 85 of 100 points (85%) and 92 of 100 points (92%) according to the Quality Appraisal for Cadaveric Studies scale.
+    
+
+
+          Conclusions:
+        
+      
+      VR and AR technologies hold great promise for hip-related surgeries, especially for preoperative operation simulation and training, feasibility applications in the operating room, and postoperative rehabilitation, and have the potential to assist orthopedic surgeons in operating more accurately and safely. More comparative studies are necessary, including studies focusing on clinical outcomes and cost-effectiveness."
+https://pubmed.ncbi.nlm.nih.gov/33774210/,"Background context:
+        
+      
+      The field of artificial intelligence (AI) is rapidly advancing, especially with recent improvements in deep learning (DL) techniques. Augmented (AR) and virtual reality (VR) are finding their place in healthcare, and spine surgery is no exception. The unique capabilities and advantages of AR and VR devices include their low cost, flexible integration with other technologies, user-friendly features and their application in navigation systems, which makes them beneficial across different aspects of spine surgery. Despite the use of AR for pedicle screw placement, targeted cervical foraminotomy, bone biopsy, osteotomy planning, and percutaneous intervention, the current applications of AR and VR in spine surgery remain limited.
+    
+
+
+          Purpose:
+        
+      
+      The primary goal of this study was to provide the spine surgeons and clinical researchers with the general information about the current applications, future potentials, and accessibility of AR and VR systems in spine surgery.
+    
+
+
+          Study design/setting:
+        
+      
+      We reviewed titles of more than 250 journal papers from google scholar and PubMed with search words: augmented reality, virtual reality, spine surgery, and orthopaedic, out of which 89 related papers were selected for abstract review. Finally, full text of 67 papers were analyzed and reviewed.
+    
+
+
+          Methods:
+        
+      
+      The papers were divided into four groups: technological papers, applications in surgery, applications in spine education and training, and general application in orthopaedic. A team of two reviewers performed paper reviews and a thorough web search to ensure the most updated state of the art in each of four group is captured in the review.
+    
+
+
+          Results:
+        
+      
+      In this review we discuss the current state of the art in AR and VR hardware, their preoperative applications and surgical applications in spine surgery. Finally, we discuss the future potentials of AR and VR and their integration with AI, robotic surgery, gaming, and wearables.
+    
+
+
+          Conclusions:
+        
+      
+      AR and VR are promising technologies that will soon become part of standard of care in spine surgery."
+https://pubmed.ncbi.nlm.nih.gov/31703708/,"Background:
+        
+      
+      Virtual reality is the science of creating a virtual environment for the assessment of various anatomical regions of the body for the diagnosis, planning and surgical training. Augmented reality is the superimposition of a 3D real environment specific to individual patient onto the surgical filed using semi-transparent glasses to augment the virtual scene.. The aim of this study is to provide an over view of the literature on the application of virtual and augmented reality in oral & maxillofacial surgery.
+    
+
+
+          Methods:
+        
+      
+      We reviewed the literature and the existing database using Ovid MEDLINE search, Cochran Library and PubMed. All the studies in the English literature in the last 10 years, from 2009 to 2019 were included.
+    
+
+
+          Results:
+        
+      
+      We identified 101 articles related the broad application of virtual reality in oral & maxillofacial surgery. These included the following: Eight systematic reviews, 4 expert reviews, 9 case reports, 5 retrospective surveys, 2 historical perspectives, 13 manuscripts on virtual education and training, 5 on haptic technology, 4 on augmented reality, 10 on image fusion, 41 articles on the prediction planning for orthognathic surgery and maxillofacial reconstruction. Dental implantology and orthognathic surgery are the most frequent applications of virtual reality and augmented reality. Virtual planning improved the accuracy of inserting dental implants using either a statistic guidance or dynamic navigation. In orthognathic surgery, prediction planning and intraoperative navigation are the main applications of virtual reality. Virtual reality has been utilised to improve the delivery of education and the quality of training in oral & maxillofacial surgery by creating a virtual environment of the surgical procedure. Haptic feedback provided an additional immersive reality to improve manual dexterity and improve clinical training.
+    
+
+
+          Conclusion:
+        
+      
+      Virtual and augmented reality have contributed to the planning of maxillofacial procedures and surgery training. Few articles highlighted the importance of this technology in improving the quality of patients' care. There are limited prospective randomized studies comparing the impact of virtual reality with the standard methods in delivering oral surgery education."
+https://pubmed.ncbi.nlm.nih.gov/36318681/,"Introduction: Augmented reality (AR) devices enable doctors to associate visualizing diagnostic data, to establish therapeutic procedures in order to improve work efficiency and safety and to develop the surgical training of young doctors. This new approach may contribute to an increase in the quality of medical training and a decrease in the costs of surgeries. This paper assesses whether augmented reality can improve the results of surgical procedures as well as its possible progress in the future. Methods and results: The intra-operative use of augmented reality by using Google Glass glasses, on which we projected MRI/CT images of the anatomical areas invaded by tumors and/or images of normal anatomy, helps us to perform surgeries, as well as to present them as teaching material. We have also performed a review of the available literature, beginning with 2011 and ending with November 2021, by looking up the terms ""augmented reality"" and ""surgical oncology"" in PubMed. The results of the search were 308 studies in this field which prove the utility of the method. Many papers show that the performance of the augmented reality systems is superior and compatible with traditional imaging techniques. Conclusions: The specialty literature reveals a growing interest on the part of surgeons regarding the use of augmented reality during surgery. This procedure enables the improvement of the safety and efficiency of surgical techniques, as well as their presentation to students and residents alike. The method is innovative and has to be carefully approached before being introduced into routine practice."
+https://pubmed.ncbi.nlm.nih.gov/38248990/,"The composition of an image is a critical element chosen by the author to construct an image that conveys a narrative and related emotions. Other key elements include framing, lighting, and colors. Assessing classical and simple composition rules in an image, such as the well-known ""rule of thirds"", has proven effective in evaluating the aesthetic quality of an image. It is widely acknowledged that composition is emphasized by the presence of leading lines. While these leading lines may not be explicitly visible in the image, they connect key points within the image and can also serve as boundaries between different areas of the image. For instance, the boundary between the sky and the ground can be considered a leading line in the image. Making the image's composition explicit through a set of leading lines is valuable when analyzing an image or assisting in photography. To the best of our knowledge, no computational method has been proposed to trace image leading lines. We conducted user studies to assess the agreement among image experts when requesting them to draw leading lines on images. According to these studies, which demonstrate that experts concur in identifying leading lines, this paper introduces a fully automatic computational method for recovering the leading lines that underlie the image's composition. Our method consists of two steps: firstly, based on feature detection, potential weighted leading lines are established; secondly, these weighted leading lines are grouped to generate the leading lines of the image. We evaluate our method through both subjective and objective studies, and we propose an objective metric to compare two sets of leading lines."
+https://pubmed.ncbi.nlm.nih.gov/37448044/,"While deep learning algorithms have advanced to a great extent, they are all designed for frame-based imagers that capture images at a high frame rate, which leads to a high storage requirement, heavy computations, and very high power consumption. Unlike frame-based imagers, event-based imagers output asynchronous pixel events without the need for global exposure time, therefore lowering both power consumption and latency. In this paper, we propose an innovative image recognition technique that operates on image events rather than frame-based data, paving the way for a new paradigm of recognizing objects prior to image acquisition. To the best of our knowledge, this is the first time such a concept is introduced featuring not only extreme early image recognition but also reduced computational overhead, storage requirement, and power consumption. Our collected event-based dataset using CeleX imager and five public event-based datasets are used to prove this concept, and the testing metrics reflect how early the neural network (NN) detects an image before the full-frame image is captured. It is demonstrated that, on average for all the datasets, the proposed technique recognizes an image 38.7 ms before the first perfect event and 603.4 ms before the last event is received, which is a reduction of 34% and 69% of the time needed, respectively. Further, less processing is required as the image is recognized 9460 events earlier, which is 37% less than waiting for the first perfectly recognized image. An enhanced NN method is also introduced to reduce this time."
+https://pubmed.ncbi.nlm.nih.gov/32749356/,"A practical method for determining wavefront aberrations in optical systems based on the acquisition of an extended, unknown object is presented. The approach utilizes a conventional phase diversity approach in combination with a pupil-engineered, helical point spread function (PSF) to discriminate the aberrated PSF from the object features. The analysis of the image's power cepstrum enables an efficient retrieval of the aberration coefficients by solving a simple linear system of equations. An extensive Monte Carlo simulation is performed to demonstrate that the approach makes it possible to measure low-order Zernike modes including defocus, primary astigmatism, coma, and trefoil. The presented approach is tested experimentally by retrieving the two-dimensional aberration distribution of a test setup by imaging an extended, unknown scene."
+https://pubmed.ncbi.nlm.nih.gov/34368481/,"This study aims to examine the effect of destination image, perceived risk, and perceived constraints on the behavioral intention of international tourists to revisit Pakistan. The study also seeks to assess the destination image's mediating role in the relationship between perceived risks, perceived constraints, and behavioral intention. A quantitative study with Partial least square structural equation modeling was used to investigate the research Hypothesis. The data was collected from international tourists who were in Pakistan or who had visited Pakistan. The findings revealed that perceived risks and perceived constraints negatively impact destination image and behavioral intention. On the other hand, destination image has a positive impact on behavior. Moreover, the study also proved the mediating effect of destination image among the relations of perceived risks, perceived constraints, and behavioral intention. These findings indicate that sometimes it is difficult for destinations to overcome constraints, so destination managers should provide value-added services for substitutes. A positive destination image can overcome risks and constraints, so destination managers should also promote destinations besides mitigating risks. Literature has discussed the mediating effect of destination image in different contexts. However, studies are scarce investigating destination image's effect in alleviating perceived constraints and perceived risks through negotiation mechanisms."
+https://pubmed.ncbi.nlm.nih.gov/38593826/,"Objective. Newer cone-beam computed tomography (CBCT) imaging systems offer reconstruction algorithms including metal artifact reduction (MAR) and extended field-of-view (eFoV) techniques to improve image quality. In this study a new CBCT imager, the new Varian HyperSight CBCT, is compared to fan-beam CT and two CBCT imagers installed in a ring-gantry and C-arm linear accelerator, respectively.Approach. The image quality was assessed for HyperSight CBCT which uses new hardware, including a large-size flat panel detector, and improved image reconstruction algorithms. The decrease of metal artifacts was quantified (structural similarity index measure (SSIM) and root-mean-squared error (RMSE)) when applying MAR reconstruction and iterative reconstruction for a dental and spine region using a head-and-neck phantom. The geometry and CT number accuracy of the eFoV reconstruction was evaluated outside the standard field-of-view (sFoV) on a large 3D-printed chest phantom. Phantom size dependency of CT numbers was evaluated on three cylindrical phantoms of increasing diameter. Signal-to-noise and contrast-to-noise were quantified on an abdominal phantom.Main results. In phantoms with streak artifacts, MAR showed comparable results for HyperSight CBCT and CT, with MAR increasing the SSIM (0.97-0.99) and decreasing the RMSE (62-55 HU) compared to iterative reconstruction without MAR. In addition, HyperSight CBCT showed better geometrical accuracy in the eFoV than CT (Jaccard Conformity Index increase of 0.02-0.03). However, the CT number accuracy outside the sFoV was lower than for CT. The maximum CT number variation between different phantom sizes was lower for the HyperSight CBCT imager (∼100 HU) compared to the two other CBCT imagers (∼200 HU), but not fully comparable to CT (∼50 HU).Significance. This study demonstrated the imaging performance of the new HyperSight CBCT imager and the potential of applying this CBCT system in more advanced scenarios by comparing the quality against fan-beam CT."
+https://pubmed.ncbi.nlm.nih.gov/37157429/,"A Fresnel Zone Aperture (FZA) mask for a lensless camera, an ultra-thin and functional computational imaging system, is beneficial because the FZA pattern makes it easy to model the imaging process and reconstruct captured images through a simple and fast deconvolution. However, diffraction causes a mismatch between the forward model used in the reconstruction and the actual imaging process, which affects the recovered image's resolution. This work theoretically analyzes the wave-optics imaging model of an FZA lensless camera and focuses on the zero points caused by diffraction in the frequency response. We propose a novel idea of image synthesis to compensate for the zero points through two different realizations based on the linear least-mean-square-error (LMSE) estimation. Results from computer simulation and optical experiments verify a nearly two-fold improvement in spatial resolution from the proposed methods compared with the conventional geometrical-optics-based method."
+https://pubmed.ncbi.nlm.nih.gov/37213057/,"Purpose:
+        
+      
+      Percutaneous fracture fixation involves multiple X-ray acquisitions to determine adequate tool trajectories in bony anatomy. In order to reduce time spent adjusting the X-ray imager's gantry, avoid excess acquisitions, and anticipate inadequate trajectories before penetrating bone, we propose an autonomous system for intra-operative feedback that combines robotic X-ray imaging and machine learning for automated image acquisition and interpretation, respectively.
+    
+
+
+          Methods:
+        
+      
+      Our approach reconstructs an appropriate trajectory in a two-image sequence, where the optimal second viewpoint is determined based on analysis of the first image. A deep neural network is responsible for detecting the tool and corridor, here a K-wire and the superior pubic ramus, respectively, in these radiographs. The reconstructed corridor and K-wire pose are compared to determine likelihood of cortical breach, and both are visualized for the clinician in a mixed reality environment that is spatially registered to the patient and delivered by an optical see-through head-mounted display.
+    
+
+
+          Results:
+        
+      
+      We assess the upper bounds on system performance through in silico evaluation across 11 CTs with fractures present, in which the corridor and K-wire are adequately reconstructed. In post hoc analysis of radiographs across 3 cadaveric specimens, our system determines the appropriate trajectory to within 2.8 ± 1.3 mm and 2.7 ± 1.8[Formula: see text].
+    
+
+
+          Conclusion:
+        
+      
+      An expert user study with an anthropomorphic phantom demonstrates how our autonomous, integrated system requires fewer images and lower movement to guide and confirm adequate placement compared to current clinical practice. Code and data are available."
+https://pubmed.ncbi.nlm.nih.gov/33551084/,"Cardiac neoplasms are a diagnostic challenge on many levels. They are rare, their clinical presentation may mimic other much more common cardiac diseases, and they are at an uncommon intersection of oncologic and cardiac imaging. The pathology of primary cardiac neoplasms explains their varied imaging features, for example, calcification in primary cardiac osteosarcomas and T2 hyperintensity in myxomas. Integrating the imaging and pathologic features of cardiac tumors furthers our understanding of the spectrum of appearances of these neoplasms and improves the clinical imager's ability to confidently make a diagnosis."
+https://pubmed.ncbi.nlm.nih.gov/23487335/,"The patellar tendon is well suited to sonographic evaluation because it is large and superficial and thus easily demonstrated. Sonography is a focused examination, concentrating on the area of pain and clinical suspicion. Its advantages over MR imaging are the speed of performance, better spatial resolution, capability of dynamic evaluation, and real-time guidance for percutaneous procedures. In addition, the advent of extended field-of-view imaging allows the demonstration of the entire length or cross section of an area of interest, matching MR imaging's ability to display a large anatomical region. This article reviews the sonographic appearances of disorders of the patellar tendon."
+https://pubmed.ncbi.nlm.nih.gov/31409022/,"In this paper, we introduce an in-depth application of high-resolution disparity map estimation using stereo images from Mars Curiosity rover's Mastcams, which have two imagers with different resolutions. The left Mastcam has three times lower resolution as that of the right. The left Mastcam image's resolution is first enhanced with three methods: Bicubic interpolation, pansharpening-based method, and a deep learning super resolution method. The enhanced left camera image and the right camera image are then used to estimate the disparity map. The impact of the left camera image enhancement is examined. The comparative performance analyses showed that the left camera enhancement results in getting more accurate disparity maps in comparison to using the original left Mastcam images for disparity map estimation. The deep learning-based method provided the best performance among the three for both image enhancement and disparity map estimation accuracy. A high-resolution disparity map, which is the result of the left camera image enhancement, is anticipated to improve the conducted science products in the Mastcam imagery such as 3D scene reconstructions, depth maps, and anaglyph images."
+https://pubmed.ncbi.nlm.nih.gov/26410498/,"Background:
+        
+      
+      Breast cancer is a tumor that begins in the breast tissue and is largely identified through X-ray imaging; however, human tissue, illumination, noise and other factors make the image's calcifications and masses unclear, which in turn affects the doctors' identification of lesions and normal tissue through X-ray imaging. Therefore, the rate of misdiagnoses can be reduced through the enhancement of X-ray images that make the images' calcifications and masses more prominent.
+    
+
+
+          Objective:
+        
+      
+      Enhancing the breast image would highlight the calcifications and masses.
+    
+
+
+          Methods:
+        
+      
+      One such way to do so is to use a curvelet that can detect curves and can, therefore, enhance the tumor characteristics. Essentially, existing methods perform a curvelet transform on each sub-image simultaneously; as the curvelet is based on the Radon transform, it involves complex computation and can easily result in difficulties. Based on this information, this article improved the algorithm that detects edges by curvelet and refines edges by wavelet. Simulation experiments using mammography X-ray images are implemented through Matlab.
+    
+
+
+          Results:
+        
+      
+      The results suggest that, after implementation of the improved algorithm, the image's edges and textures are clear, the calcifications are independent, and there is no caking.
+    
+
+
+          Conclusions:
+        
+      
+      The curvelet method is imporved in efficacy with respect to the wavelet method."
+https://pubmed.ncbi.nlm.nih.gov/28178045/,"Objective:
+        
+      
+      To use data from the Cervical Length Education and Review program to evaluate the quality of transvaginal cervical length ultrasonography by trained imagers (ie, ultrasonographers, radiologists, perinatologists).
+    
+
+
+          Methods:
+        
+      
+      This is a retrospective observational study of data from the Cervical Length Education and Review program. Candidates underwent an online lecture series, examination, and submitted a batch of images for review. For a candidate's batch of images to pass, all images must meet at least seven of the nine criteria assessed, the overall batch score needs to be 80% or greater, correct caliper placement must be met for all images, and the same criterion cannot be consistently missed. We also examined a subset of these criteria-appropriate image acquisitions, defined as an image that demonstrated both internal and external os and visualization of the entire endocervical canal. Primary outcome was the overall initial candidate pass rate; secondary outcomes included distribution of criteria missed in images and percentage of images that was inadequately acquired.
+    
+
+
+          Results:
+        
+      
+      Six hundred eighty-seven candidates submitted 3,748 images between June 10, 2012, and August 18, 2016. Eighty-five percent of candidates were ultrasonographers. Of the 687 initial batches submitted, 105 (15%) did not pass. Eight hundred thirty-seven images (22%) of all images failed at least one criterion; the most common image deficiencies were in ""anterior width of cervix equals the posterior width"" (33%), ""failure to visualize"" the internal or external os (29%), ""cervix occupies 75% of image and bladder area visible"" (33%), and incorrect caliper placement (24%). Two hundred fifty-six (7%) of all images failed to meet our criteria for adequate image acquisition.
+    
+
+
+          Conclusion:
+        
+      
+      Fifteen percent of trained imagers failed to obtain appropriate cervical length imaging. This highlights the importance of a standardized cervical length training and certification program."
+https://pubmed.ncbi.nlm.nih.gov/30982111/,"Current best practice in the quantitative analysis of microscopy images dictates that image files should be saved in a lossless format such as TIFF. Use of lossy files, including those processed with the JPEG algorithm, is highly discouraged due to effects of compression on pixel characteristics. However, with the growing popularity of whole-slide imaging (WSI) and its attendant large file sizes, compressed image files are becoming more prevelent. This prompted us to perform a color-based quantitative pixel analysis of minimally compressed WSI images. Sections from three tissues stained with one of three reagents representing the colors blue (hematoxylin), red (Oil-Red-O), and brown (immunoperoxidase) were scanned with a whole slide imager in triplicate at 20x, 40x, and 63x magnifications. The resulting files were in the form of a BigTIFF with a JPEG compression automatically applied during acquisition. Images were imported into analysis software, six regions of interest were applied to various morphological locations, and the areas assessed for the color of interest. Whereas the number of designated weakly or strongly positive pixels was variable across the triplicate scans for the individual regions of interest, the total number of positive pixels was consistent. These results suggest that total positivity for a specific color representing a histochemical or immunohistochemical stain can be adequately quantitated on compressed images, but degrees of positivity (e.g., weak vs. strong) may not be as reliable. However, it is important to assess individual whole-slide imagers, file compression level and algorithm, and analysis software for reproducibility."
+https://pubmed.ncbi.nlm.nih.gov/26033507/,"Objective:
+        
+      
+      To evaluate the ability of trained nonphysician retinal imagers to perform diabetic retinopathy (DR) evaluation at the time of ultrawide field retinal (UWF) imaging in a teleophthalmology program.
+    
+
+
+          Research design and methods:
+        
+      
+      Clinic patients with diabetes received Joslin Vision Network protocol retinal imaging as part of their standard medical care. Retinal imagers evaluated UWF images for referable DR at the time of image capture. Training of the imagers included 4 h of standardized didactic lectures and 12 h of guided image review. Real-time evaluations were compared with standard masked gradings performed at a centralized reading center.
+    
+
+
+          Results:
+        
+      
+      A total of 3,978 eyes of 1,989 consecutive patients were imaged and evaluated. By reading center evaluation, 3,769 eyes (94.7%) were gradable for DR, 1,376 (36.5%) had DR, and 580 (15.3%) had referable DR. Compared with the reading center, real-time image evaluation had a sensitivity and specificity for identifying more than minimal DR of 0.95 (95% CI 0.94-0.97) and 0.84 (0.82-0.85), respectively, and 0.99 (0.97-1.00) and 0.76 (0.75-0.78), respectively, for detecting referable DR. Only three patients with referable DR were not identified by imager evaluation.
+    
+
+
+          Conclusions:
+        
+      
+      Point-of-care evaluation of UWF images by nonphysician imagers following standardized acquisition and evaluation protocols within an established teleophthalmology program had good sensitivity and specificity for detection of DR and for identification of referable retinal disease. With immediate image evaluation, <0.1% of patients with referable DR would be missed, reading center image grading burden would be reduced by 60%, and patient feedback would be expedited."
+https://pubmed.ncbi.nlm.nih.gov/22047361/,"Purpose:
+        
+      
+      To quantify the improvement in megavoltage cone beam computed tomography (MVCBCT) image quality enabled by the combination of a 4.2 MV imaging beam line (IBL) with a carbon electron target and a detector system equipped with a novel sintered pixelated array (SPA) of translucent Gd(2)O(2)S ceramic scintillator. Clinical MVCBCT images are traditionally acquired with the same 6 MV treatment beam line (TBL) that is used for cancer treatment, a standard amorphous Si (a-Si) flat panel imager, and the Kodak Lanex Fast-B (LFB) scintillator. The IBL produces a greater fluence of keV-range photons than the TBL, to which the detector response is more optimal, and the SPA is a more efficient scintillator than the LFB.
+    
+
+
+          Methods:
+        
+      
+      A prototype IBL + SPA system was installed on a Siemens Oncor linear accelerator equipped with the MVision(TM) image guided radiation therapy (IGRT) system. A SPA strip consisting of four neighboring tiles and measuring 40 cm by 10.96 cm in the crossplane and inplane directions, respectively, was installed in the flat panel imager. Head- and pelvis-sized phantom images were acquired at doses ranging from 3 to 60 cGy with three MVCBCT configurations: TBL + LFB, IBL + LFB, and IBL + SPA. Phantom image quality at each dose was quantified using the contrast-to-noise ratio (CNR) and modulation transfer function (MTF) metrics. Head and neck, thoracic, and pelvic (prostate) cancer patients were imaged with the three imaging system configurations at multiple doses ranging from 3 to 15 cGy. The systems were assessed qualitatively from the patient image data.
+    
+
+
+          Results:
+        
+      
+      For head and neck and pelvis-sized phantom images, imaging doses of 3 cGy or greater, and relative electron densities of 1.09 and 1.48, the CNR average improvement factors for imaging system change of TBL + LFB to IBL + LFB, IBL + LFB to IBL + SPA, and TBL + LFB to IBL + SPA were 1.63 (p < 10(- 8)), 1.64 (p < 10(- 13)), 2.66 (p < 10(- 9)), respectively. For all imaging doses, soft tissue contrast was more easily differentiated on IBL + SPA head and neck and pelvic images than TBL + LFB and IBL + LFB. IBL + SPA thoracic images were comparable to IBL + LFB images, but less noisy than TBL + LFB images at all imaging doses considered. The mean MTFs over all imaging doses were comparable, at within 3%, for all imaging system configurations for both the head- and pelvis-sized phantoms.
+    
+
+
+          Conclusions:
+        
+      
+      Since CNR scales with the square root of imaging dose, changing from TBL + LFB to IBL + LFB and IBL + LFB to IBL + SPA reduces the imaging dose required to obtain a given CNR by factors of 0.38 and 0.37, respectively. MTFs were comparable between imaging system configurations. IBL + SPA patient image quality was always better than that of the TBL + LFB system and as good as or better than that of the IBL + LFB system, for a given dose."
+https://pubmed.ncbi.nlm.nih.gov/24292628/,"Imagers that use their own illumination can capture three-dimensional (3D) structure and reflectivity information. With photon-counting detectors, images can be acquired at extremely low photon fluxes. To suppress the Poisson noise inherent in low-flux operation, such imagers typically require hundreds of detected photons per pixel for accurate range and reflectivity determination. We introduce a low-flux imaging technique, called first-photon imaging, which is a computational imager that exploits spatial correlations found in real-world scenes and the physics of low-flux measurements. Our technique recovers 3D structure and reflectivity from the first detected photon at each pixel. We demonstrate simultaneous acquisition of sub-pulse duration range and 4-bit reflectivity information in the presence of high background noise. First-photon imaging may be of considerable value to both microscopy and remote sensing."
+https://pubmed.ncbi.nlm.nih.gov/24614436/,"Following every well-publicized act of incomprehensible violence, the news media rush to interview neighbors, family members, and experts in an attempt to discover what could have led an individual to commit such a barbarous act. Certain stock answers are reiterated: video games, bullying, violent films, mental illness, the availability of guns, and a society that is increasingly both anonymous and callous. Might imaging be one of the more valuable keys to unlocking the mysteries of violent, aggressive people? This article explores these questions and their complex answers in the context of violent individuals."
+https://pubmed.ncbi.nlm.nih.gov/37955139/,"Background:
+        
+      
+      We aimed to assess in a prospective multicenter study the quality of echocardiographic exams performed by inexperienced users guided by a new artificial intelligence software and evaluate their suitability for diagnostic interpretation of basic cardiac pathology and quantitative analysis of cardiac chamber and function.
+    
+
+
+          Methods:
+        
+      
+      The software (UltraSight, Ltd) was embedded into a handheld imaging device (Lumify; Philips). Six nurses and 3 medical residents, who underwent minimal training, scanned 240 patients (61±16 years; 63% with cardiac pathology) in 10 standard views. All patients were also scanned by expert sonographers using the same device without artificial intelligence guidance. Studies were reviewed by 5 certified echocardiographers blinded to the imager's identity, who evaluated the ability to assess left and right ventricular size and function, pericardial effusion, valve morphology, and left atrial and inferior vena cava sizes. Finally, apical 4-chamber images of adequate quality, acquired by novices and sonographers in 100 patients, were analyzed to measure left ventricular volumes, ejection fraction, and global longitudinal strain by an expert reader using conventional methodology. Measurements were compared between novices' and experts' images.
+    
+
+
+          Results:
+        
+      
+      Of the 240 studies acquired by novices, 99.2%, 99.6%, 92.9%, and 100% had sufficient quality to assess left ventricular size and function, right ventricular size, and pericardial effusion, respectively. Valve morphology, right ventricular function, and left atrial and inferior vena cava size were visualized in 67% to 98% exams. Images obtained by novices and sonographers yielded concordant diagnostic interpretation in 83% to 96% studies. Quantitative analysis was feasible in 83% images acquired by novices and resulted in high correlations (r≥0.74) and small biases, compared with those obtained by sonographers.
+    
+
+
+          Conclusions:
+        
+      
+      After minimal training with the real-time guidance software, novice users can acquire images of diagnostic quality approaching that of expert sonographers in most patients. This technology may increase adoption and improve accuracy of point-of-care cardiac ultrasound."
+https://pubmed.ncbi.nlm.nih.gov/35899528/,"High-resolution mapping of magnetic resonance imaging (MRI)'s transverse relaxation time (T2 ) can benefit many clinical applications by offering improved anatomic details, enhancing the ability to probe tissues' microarchitecture, and facilitating the identification of early pathology. Increasing spatial resolutions, however, decreases data's signal-to-noise ratio (SNR), particularly at clinical scan times. This impairs imaging quality, and the accuracy of subsequent radiological interpretation. Recently, principal component analysis (PCA) was employed for denoising diffusion-weighted MR images and was shown to be effective for improving parameter estimation in multiexponential relaxometry. This study combines the Marchenko-Pastur PCA (MP-PCA) signal model with the echo modulation curve (EMC) algorithm for denoising multiecho spin-echo (MESE) MRI data and improving the precision of EMC-generated single T2 relaxation maps. The denoising technique was validated on simulations, phantom scans, and in vivo brain and knee data. MESE scans were performed on a 3-T Siemens scanner. The acquired images were denoised using the MP-PCA algorithm and were then provided as input for the EMC T2 -fitting algorithm. Quantitative analysis of the denoising quality included comparing the standard deviation and coefficient of variation of T2 values, along with gold standard SNR estimation of the phantom scans. The presented denoising technique shows an increase in T2 maps' precision and SNR, while successfully preserving the morphological features of the tissue. Employing MP-PCA denoising as a preprocessing step decreases the noise-related variability of T2 maps produced by the EMC algorithm and thus increases their precision. The proposed method can be useful for a wide range of clinical applications by facilitating earlier detection of pathologies and improving the accuracy of patients' follow-up."
+https://pubmed.ncbi.nlm.nih.gov/22900940/,"Vignetting is the radial attenuation effect of the image's brightness intensity from the center of the optical axis to the edges. To perform quantitative image analyses it is mandatory to take into account this effect, intrinsic of the acquisition system. Many image processing steps, such as segmentation and object tracking, are strongly affected by vignetting and the effect becomes particularly evident in mosaicing. The most common approach to compensate the attenuation of the image's brightness intensity is to estimate the vignetting function from a homogeneous reference object, typically an empty field, and to use it to normalize the images acquired under the same microscope set-up conditions. However, several reasons lead to the use of image-based methods to estimate the vignetting function from the images themselves. In this work, we propose an effective multi-image based method suitable for real-time applications. It is designed to correct vignetting in wide field light microscopy images. The vignetting function is computed stemming from a background built incrementally from the proposed background segmentation algorithm, validated on several manually segmented images. The extensive experiments carried out using cell cultures, histological samples and synthetic images prove that our method almost always yields the best results and in worst cases are comparable to those achieved by using homogeneous reference objects."
